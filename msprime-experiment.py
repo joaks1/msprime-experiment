@@ -65,9 +65,11 @@ def main():
             num_replicates = number_of_replicates)
     mid_time = datetime.datetime.now()
     # pis = [t.get_pairwise_diversity() for t in trees]
+    ntrees = 0
     for t in trees:
-        pass
+        ntrees += 1
     stop_time = datetime.datetime.now()
+    sys.stdout.write('ntrees = {0}\n'.format(ntrees))
     sys.stdout.write('sim time = {0}\n'.format(str(mid_time - start_time)))
     sys.stdout.write('iter time = {0}\n'.format(str(stop_time - mid_time)))
     
