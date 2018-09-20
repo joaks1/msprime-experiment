@@ -69,7 +69,7 @@ def main():
         pass
     stop_time = datetime.datetime.now()
     sys.stdout.write('sim time = {0}\n'.format(str(mid_time - start_time)))
-    sys.stdout.write('div time = {0}\n'.format(str(stop_time - mid_time)))
+    sys.stdout.write('iter time = {0}\n'.format(str(stop_time - mid_time)))
     
 if __name__ == '__main__':
     main()
